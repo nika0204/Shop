@@ -1,0 +1,181 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+button {
+  padding-block: 0;
+  padding-inline: 0;
+  border-width: 0;
+  background-color: inherit;
+}
+
+body {
+  font-size: 16px;
+}
+
+.header {
+  margin-bottom: 3rem;
+}
+
+.header__links {
+  align-items: center;
+  display: flex;
+  gap: 1.2rem;
+  margin: 1rem;
+
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 0.6rem;
+  text-align: center;
+}
+
+.list__products {
+  display: flex;
+  gap: 1.1rem;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0.6rem;
+}
+
+.product {
+  max-width: 25rem;
+
+}
+
+.product__image {
+  width: 18.75rem;
+  height: 18.75rem;
+  object-fit: contain;
+}
+
+.product__title {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.product__description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.grop__btn {
+  display: flex;
+  justify-content: center;
+  gap: 0.99rem;
+}
+
+.btn {
+  background-color: transparent;
+  border: 1px solid #000;
+  border-radius: 10%;
+  padding: 0.1rem 0.6rem;
+  cursor: pointer;
+}
+
+.btn__sort, .btn__add {
+  cursor: pointer;
+  border: 1px solid #000;
+  padding: 0.3rem 0.6rem;
+  border-radius: 1rem;
+}
+
+.btn__sort:hover, .btn__add:hover {
+  color: white;
+  background-color: #000;
+  transition: all 0.5s ease-out;
+}
+
+.shop__btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.btn__like{
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+}
+
+.btn__like:hover{
+  color: rgb(193, 30, 30);
+  transition: all 0.4s ease-in;
+}
+
+.cart{
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cart__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25rem;
+}
+
+.cart__btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0.99rem;
+}
+
+
+
+.single__rating {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.2rem;
+  padding-bottom: 1rem;
+}
+
+.wrrap{
+  display: flex;
+
+justify-content: center;
+}
+
+.cart__total{
+  border: 1px solid #000;
+  border-radius: 1.2rem;
+  padding: 1rem;
+  font-weight: 800;
+  max-width: fit-content;
+  height: 5rem;
+  margin: 1rem;
+} 
+
+
+
+@media (max-width: 855px) {
+  body {
+    font-size: 20px;
+  }
+  button{
+    font-size: 18px;
+  }
+  
+}
+
+
+
+@media (max-width: 555px) {
+  
+  .wrrap{
+    flex-wrap: wrap;
+    margin-bottom: 1.2rem;
+   }
+}
